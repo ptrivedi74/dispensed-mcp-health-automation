@@ -18,16 +18,3 @@ This tool uses an **MCP Server/Client Architecture** to securely bridge LLMs (Ge
 * **Speed:** Reduces pre-consult summary generation from ~5–7 minutes to **< 3 seconds**.
 * **Safety:** Programmatic guardrails reject non-compliant candidates before doctor review, reducing clinical overhead.
 * **Privacy:** Pre-screens data locally before sending anonymized payloads to the LLM agent.
-
----
-
-## System Architecture
-
-text
-+-----------------------+        MCP Protocol        +----------------------------+
-|  Agent Orchestrator   |  <---------------------->  |     MCP Health Server      |
-|  (LangChain/Gemini)   |    Tools & Structured Data |  (mcp_health_server.py)    |
-+-----------------------+                            +----------------------------+
-            |                                                      |
-            v                                                      v
-  Generates Clinical Brief                               Checks TGA / EMR Data
