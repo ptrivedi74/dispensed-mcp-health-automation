@@ -1,0 +1,17 @@
+# Sensitive keys & local secrets
+.env
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system files
+.DS_Store
+Thumbs.db
