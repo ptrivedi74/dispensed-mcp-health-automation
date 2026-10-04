@@ -13,7 +13,7 @@ load_dotenv()
 
 async def process_patient_triage_automation(patient_id: str):
     """
-    Automates the patient intake and clinical summary pipeline using Gemini 2.5 & MCP.
+    Automates the patient intake and clinical summary pipeline using Gemini 3.6 & MCP.
     """
     print(f"\n========================================================")
     print(f"  DISPENSED AUTOMATION ENGINE: Processing {patient_id}")
@@ -34,7 +34,7 @@ async def process_patient_triage_automation(patient_id: str):
 
             # Initialize Gemini Model
             llm = ChatGoogleGenerativeAI(
-                model="gemini-2.5-flash",
+                model="gemini-3.6-flash",
                 temperature=0.0,
                 google_api_key=os.getenv("GEMINI_API_KEY")
             )
