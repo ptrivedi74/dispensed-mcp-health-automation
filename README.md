@@ -13,7 +13,7 @@ Telehealth platforms spend significant manual hours on pre-consultation admin:
 4. Synthesizing medical histories into pre-consultation briefs for prescribers.
 
 ### **The Solution**
-This tool uses an **MCP Server/Client Architecture** to securely bridge LLMs (Gemini 2.5 Flash) with internal Electronic Medical Record (EMR) databases and regulatory compliance rules.
+This tool uses an **MCP Server/Client Architecture** to securely bridge LLMs (Gemini 3.6 Flash) with internal Electronic Medical Record (EMR) databases and regulatory compliance rules.
 
 * **Speed:** Reduces pre-consult summary generation from ~5–7 minutes to **< 3 seconds**.
 * **Safety:** Programmatic guardrails reject non-compliant candidates before doctor review, reducing clinical overhead.
